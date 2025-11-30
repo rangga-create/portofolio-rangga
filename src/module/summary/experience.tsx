@@ -13,7 +13,7 @@ export default function Experience({ title, link, sentences, className, notAllow
           {notAllowed ? (
             <AiOutlineLink className="mx-3 inline cursor-not-allowed text-xl text-white" />
           ) : (
-            <Link to={link} className="mx-3 hover:opacity-50 active:opacity-50">
+            <Link to={link} target="_blank" className="mx-3 hover:opacity-50 active:opacity-50">
               <AiOutlineLink className="inline text-xl text-white" />
             </Link>
           )}

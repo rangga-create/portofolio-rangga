@@ -153,7 +153,7 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
             </div>
             <div className="flex flex-col items-start justify-between md:flex-row md:items-end">
               <div className="mb-10 flex flex-col gap-2 md:hidden">
-                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah-a48651190/" target="_blank" className="flex items-end gap-2">
+                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah" target="_blank" className="flex items-end gap-2">
                   <GrLinkedin className="mt-1 text-xl" style={{ color: colorMode !== 'light' ? light : dark }} />
                   <span style={{ color: colorMode !== 'light' ? light : dark }} className="font-poppins font-light underline">
                     Linkedin
@@ -178,7 +178,7 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
                 className="hidden w-fit origin-bottom items-baseline gap-x-10 px-3 pb-2 pt-3 md:flex"
                 tag="div"
               >
-                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah-a48651190/" target="_blank" className="flex items-baseline">
+                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah" target="_blank" className="flex items-baseline">
                   <GrLinkedin className="mt-1 text-xl" style={{ color: colorMode === 'light' ? light : dark }} />
                 </Link>
                 <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-baseline">
@@ -189,7 +189,7 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
                 </Link>
               </StaggerSlideElementMenu>
               <span className="font-poppins " style={{ color: colorMode !== 'light' ? light : dark }}>
-                ©️2023
+                ©️{new Date().getFullYear()}
               </span>
               <span className="font-poppins " style={{ color: colorMode !== 'light' ? light : dark }}>
                 Made with ❤️ by fiqri ardiansyah

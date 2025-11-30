@@ -113,9 +113,9 @@ const Default = () => {
             <HandRock />
           </motion.div>
         </div>
-        <motion.p style={{ y: scrollSpeedDesc }} className="CONTAINER MENU-CHANGE-Y-100 pointer-events-none mt-20 text-4xl text-gray-500">
+        <motion.p style={{ y: scrollSpeedDesc }} className="CONTAINER MENU-CHANGE-Y-100  pointer-events-none mt-20 text-4xl text-gray-600">
           Greetings, I&apos;m <span className="font-semibold text-primary">Fiqri Ardiansyah</span>, a seasoned{' '}
-          <span className="font-semibold text-primary">Frontend Developer</span> with over 2 years of experience. I specialize in crafting web
+          <span className="font-semibold text-primary">Fullstack Developer</span> with over 4 years of experience. I specialize in crafting web
           experiences that aren&apos;t just static pages but dynamic journeys. Explore my world of interactive web development.
         </motion.p>
         <AnimatePresence>
@@ -141,7 +141,7 @@ const Default = () => {
             <motion.div className="absolute left-0 top-0 flex h-screen w-full flex-col gap-y-2">
               <ParallaxMarquee baseVelocity={-3} speed={2000}>
                 <div className="MENU-CHANGE-Y-200 mb-4 flex items-center overflow-visible font-poppins text-9xl text-yellow-400">
-                  <span>FRONTEND IS LIKE ART</span>
+                  <span>BUILDING APP IS AN ART</span>
                   <Magnet strength={10}>
                     <div className="group mx-7 flex h-[100px] w-[100px] items-center justify-center rounded-full border border-solid border-yellow-400 hover:bg-yellow-400">
                       <Magnet>
@@ -173,9 +173,9 @@ const Default = () => {
                     <ExpertiseSnake scrollY={scrollYExpertise} />
                   </Suspense>
                   <MeIllustrateFace onClickLeftEar={onClickLeftEar} className="pointer-events-none relative z-10" />
-                  <div className="absolute left-1/2 mt-[-15%] w-screen -translate-x-1/2">
+                  <div className="absolute left-1/2 z-0 mt-[-15%] h-screen w-screen -translate-x-1/2">
                     <div
-                      className="relative z-10 h-[40vh] w-[100vw] overflow-hidden bg-primary"
+                      className="relative z-10 w-[100vw] overflow-hidden bg-primary"
                       style={{ borderRadius: '100% 100% 0 0', cursor: 'url(/pencil.png) 0 130, auto' }}
                     >
                       <svg id="drawing-container" className="h-full w-full " width="600" height="400" />
@@ -187,7 +187,7 @@ const Default = () => {
           </div>
         </div>
       </div>
-      <div className="relative z-10 h-[200vh] w-full bg-secondary">
+      <div className="relative z-10 h-[150vh] w-full bg-secondary">
         <div className="container mx-auto pt-[5%]">
           <Magnet strength={10} className="MENU-CHANGE-Y-200 z-[-10] mt-4 w-fit">
             <motion.div
@@ -202,10 +202,10 @@ const Default = () => {
               </Magnet>
             </motion.div>
           </Magnet>
-          <div className="h-[50vh]">
+          <div className="h-[50vh] ">
             <h2 className="MENU-CHANGE-Y-100 sticky top-[10%] mb-[10%] font-poppins text-8xl font-medium text-primary">Let&apos;s Collaborate</h2>
           </div>
-          <div className="MENU-CHANGE-SCALE-80 flex w-full justify-center">
+          <div className="MENU-CHANGE-SCALE-80 flex w-full justify-center ">
             <HandPeace />
           </div>
           <motion.p className="CONTAINER MENU-CHANGE-Y-100 pointer-events-none mt-20 text-4xl text-gray-500">

@@ -123,13 +123,13 @@ const SpecializingFrontendSection = () => {
               fallbackState={{ element: bubleArrowBottomCursor as any }}
             >
               <div className="relative ml-2 mr-10 inline-block">
-                <span className="pointer-events-none opacity-0">Fron-end</span>
+                <span className="pointer-events-none opacity-0">Fullstack</span>
                 <motion.span
                   aria-hidden
                   transition={{ duration: 0.4 }}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
                 >
-                  Front-end
+                  Fullstack
                 </motion.span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

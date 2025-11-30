@@ -38,7 +38,7 @@ export default function SectionInteractiveMobile() {
         </div>
         <motion.p style={{ y: scrollSpeedDesc }} className="CONTAINER pointer-events-none mt-20 text-justify text-2xl text-gray-700 ">
           Greetings, I&apos;m <span className="font-semibold text-primary">Fiqri Ardiansyah</span>, a seasoned{' '}
-          <span className="font-semibold text-primary">Frontend Developer</span> with over 2 years of experience. I specialize in crafting web
+          <span className="font-semibold text-primary">Fullstack Developer</span> with over 4 years of experience. I specialize in crafting web
           experiences that aren&apos;t just static pages but dynamic journeys. Explore my world of interactive web development.
         </motion.p>
         {/* <motion.div

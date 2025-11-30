@@ -19,7 +19,9 @@ const Home = ({ asPreview }: PageProps) => {
           <SectionFA />
           <SectionInteractive />
           <SectionFrontendDev />
-          <Footer linkTitle="ABOUT" linkTo={routes.about} title="What's next?" colorMode="light" />
+          <div className="relative z-50">
+            <Footer linkTitle="ABOUT" linkTo={routes.about} title="What's next?" colorMode="light" />
+          </div>
         </>
       )}
     </div>

@@ -30,6 +30,7 @@ export type ExperienceRowProps = {
   text3?: string | React.ReactElement
   color?: string
   image?: any
+  link?: any
 }
 
 const HoverEffect = ({ children, color, image, text1 }: { children: any } & ExperienceRowProps) => {
@@ -75,7 +76,7 @@ const HoverEffect = ({ children, color, image, text1 }: { children: any } & Expe
   )
 }
 
-const ExperienceRow = ({ text1, text2, text3, color, image }: ExperienceRowProps) => {
+const ExperienceRow = ({ text1, text2, text3, color, image, link }: ExperienceRowProps) => {
   const { state } = React.useContext(StateContext)
   const [hover, setHover] = React.useState(false)
 
@@ -88,6 +89,12 @@ const ExperienceRow = ({ text1, text2, text3, color, image }: ExperienceRowProps
     setHover(false)
   }
 
+  const openLink = () => {
+    if (link) {
+      window.open(link, '_blank')
+    }
+  }
+
   const content = React.useMemo(
     () => (
       <motion.button
@@ -95,8 +102,11 @@ const ExperienceRow = ({ text1, text2, text3, color, image }: ExperienceRowProps
         onHoverEnd={onHoverInactive}
         onFocus={onHoverActive}
         onBlur={onHoverInactive}
-        className="CHILD-STAGGER flex w-full cursor-not-allowed items-center py-5 transition-opacity duration-200 hover:opacity-30 active:opacity-30 lg:p-20"
+        className={`CHILD-STAGGER ${
+          link ? 'cursor-pointer' : 'cursor-not-allowed'
+        } flex w-full items-center py-5 transition-opacity duration-200 hover:opacity-30 active:opacity-30 lg:p-20`}
         style={{ borderTop: '1px solid white', opacity: hover ? 0.3 : 1 }}
+        onClick={openLink}
       >
         <div className="relative">
           <h2

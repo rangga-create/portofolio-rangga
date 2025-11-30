@@ -14,7 +14,7 @@ const Experiences = () => {
           <Experience
             notAllowed
             title="Informatics Engineering (Bachelor)"
-            sentences={['Universitas Mikroskil', 'Medan , Indonesia', '2019/2023']}
+            sentences={['Universitas Mikroskil', 'Medan , Indonesia', '3.69/4.00']}
             link="/"
           />
         </ul>
@@ -22,14 +22,15 @@ const Experiences = () => {
       <div className="CHILD-STAGGER" id="experiences">
         <TitleSummaries text="Experiences" observeId="experiences" />
         <ul className="list-disc marker:text-white">
-          <Experience notAllowed title="Creloka" sentences={['Frontend Developer', 'Mar 2022 - Present']} link="/" />
+          <Experience title="INCIT" sentences={['Fullstack Developer', 'Dec 2024 - Present']} link="https://incit.org/" />
+          <Experience notAllowed title="Creloka" sentences={['Fullstack Developer', 'Mar 2022 - Nov 2024']} link="/" />
           <Experience notAllowed title="Panggilin" sentences={['Frontend Developer', 'Jun 2021 - Mar 2022']} link="/" className="mt-5" />
         </ul>
       </div>
       <div className="CHILD-STAGGER" id="selected-project">
         <TitleSummaries text="Selected Projects" observeId="selected-project" />
         <ul className="list-disc marker:text-white">
-          <Experience notAllowed title="JRG Bus" sentences={['Frontend Developer', 'Okt 2022 - Apr 2023', 'Contract']} link="/" />
+          <Experience notAllowed title="JRG Bus" sentences={['Fullstack Developer', 'Okt 2022 - Apr 2023', 'Contract']} link="/" />
           <Experience
             notAllowed
             title="Monapro - Telkom Indonesia"
@@ -66,8 +67,7 @@ const Experiences = () => {
       <div className="CHILD-STAGGER" id="tech">
         <TitleSummaries text="Tech" observeId="tech" />
         <p className="font-poppins text-base text-secondary lg:text-2xl">
-          ReactJs . NextJs . PWA . Javascript . Typescript . NodeJs . Redux . Recoil . Webpack . Vite . SASS . Ant Design . Bootstrap . MaterialUI .
-          TailwindCSS . Eslint . Prettier . Commitlint . Firebase . React Testing Library . Storybook .
+          ReactJS . NextJS . NestJS . NodeJS . GO . Fiber . Microservices . Microfrontend . Typescript . Javascript . AWS . PostgreSQL
           <WithCursorElement
             state={{
               element: {
@@ -95,12 +95,7 @@ const Experiences = () => {
         <TitleSummaries text="Contact" observeId="contact" />
         <ul className="list-disc marker:text-white">
           <Experience title="Email" sentences={['fiqriardian92@gmail.com']} link="mailto:fiqriardian92@gmail.com" />
-          <Experience
-            title="Linkedin"
-            sentences={['Fiqri Ardiansyah']}
-            link="https://www.linkedin.com/in/fiqri-ardiansyah-a48651190/"
-            className="mt-5"
-          />
+          <Experience title="Linkedin" sentences={['Fiqri Ardiansyah']} link="https://www.linkedin.com/in/fiqri-ardiansyah" className="mt-5" />
         </ul>
       </div>
     </div>

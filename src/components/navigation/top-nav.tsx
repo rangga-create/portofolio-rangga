@@ -79,7 +79,7 @@ const TopNav = () => {
           <WithCursorElement fallbackState={{ element: null }} state={{ element: nameCursor.in as any }}>
             <Link to="/">
               <Magnet>
-                <span className={linkClass}>FA - 23 ©️</span>
+                <span className={linkClass}>FA - {new Date().getFullYear()} ©️</span>
               </Magnet>
             </Link>
           </WithCursorElement>

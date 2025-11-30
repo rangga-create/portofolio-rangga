@@ -27,7 +27,7 @@ export default function MenuFooter() {
         FIQRI ARDIANSYAH
       </StaggerSlideElementMenu>
       <div className="mb-10 flex flex-col gap-2 md:hidden">
-        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah-a48651190/" target="_blank" className="flex items-end gap-2">
+        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah/" target="_blank" className="flex items-end gap-2">
           <GrLinkedin className="mt-1 text-xl text-primary" />
           <span className="font-poppins font-light underline">Linkedin</span>
         </Link>
@@ -45,7 +45,7 @@ export default function MenuFooter() {
         className="hidden w-fit origin-bottom items-baseline gap-x-10 bg-primary px-3 pb-2 pt-3 md:flex"
         tag="div"
       >
-        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah-a48651190/" target="_blank" className="flex items-baseline">
+        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah/" target="_blank" className="flex items-baseline">
           <GrLinkedin className="mt-1 text-xl text-white" />
         </Link>
         <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-baseline">

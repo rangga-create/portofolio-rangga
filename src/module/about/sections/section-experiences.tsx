@@ -5,6 +5,7 @@ import IDCampImg from 'assets/images/idcamp-summary.png'
 import JrgImg from 'assets/images/jrg-summary.png'
 import MonaproImg from 'assets/images/monapro-summary.png'
 import PanggilinImg from 'assets/images/panggilin-summary.png'
+import IncitImg from 'assets/images/incit-summary.png'
 import Magnet from 'components/effect/magnet'
 import { motion } from 'framer-motion'
 import { easeDefault } from 'lib/utils'
@@ -14,12 +15,20 @@ import { AiOutlineArrowDown } from 'react-icons/ai'
 
 export default function SectionExperiences() {
   const experiences: ExperienceRowProps[] = [
-    { text1: 'Crealoka', text2: '2022 - Present', text3: 'Frontend Developer', color: '#0091F8', image: CrealokaImg },
+    {
+      text1: 'INCIT',
+      text2: '2024 - Present',
+      text3: 'Fullstack Developer',
+      color: 'rgba(158,107,184,0.996078)',
+      image: IncitImg,
+      link: 'https://incit.org'
+    },
+    { text1: 'Crealoka', text2: '2022 - 2024', text3: 'Fullstack Developer', color: '#0091F8', image: CrealokaImg },
     { text1: 'Panggilin', text2: '2021 - 2022', text3: 'Frontend Developer', color: '#F1592A', image: PanggilinImg }
   ]
 
   const selectedProjects: ExperienceRowProps[] = [
-    { text1: 'JRG Bus', text2: 'Contract', text3: 'Frontend Developer', color: '#F85959', image: JrgImg },
+    { text1: 'JRG Bus', text2: 'Contract', text3: 'Fullstack Developer', color: '#F85959', image: JrgImg },
     { text1: 'Monapro', text2: 'Contract', text3: 'Frontend Developer', color: '#411719', image: MonaproImg }
   ]
 
