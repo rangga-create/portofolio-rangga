@@ -6,6 +6,7 @@ f.a.svg
 functionality.png
 get.png
 idcamp-summary.png
+incit-summary.png
 indonesia-coy.png
 jrg-summary.png
 make-firt-move.jpg

@@ -7,6 +7,9 @@
     "name": "Fiqri Ardiansyah",
     "email": "fiqriardi@gmail.com"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "write-all-images": "node read-images.js",
     "dev": "npm run write-all-images && vite",
