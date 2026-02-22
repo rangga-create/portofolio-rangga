@@ -48,7 +48,7 @@ const defaultOptions = {
 
 const paragraph = [
   <div className="flex items-center" key="front-enddeveloper">
-    front-end developer
+    fullstack developer
     <Lottie
       options={{ ...defaultOptions, animationData: RocketAnimation }}
       height={100}

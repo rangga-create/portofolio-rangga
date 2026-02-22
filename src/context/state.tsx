@@ -61,16 +61,16 @@ const StateProvider = ({ children }: any) => {
 
   useEffect(() => {
     if (state?.isSplashShow) return
-    const isShowNotif = localStorage.getItem('alreadyshownotif')
-    if (!isShowNotif) {
-      localStorage.setItem('alreadyshownotif', 'true')
-      setTimeout(() => {
-        setState((prev) => ({
-          ...prev,
-          showNotif: true
-        }))
-      }, 5000)
-    }
+    // const isShowNotif = localStorage.getItem('alreadyshownotif')
+    // if (!isShowNotif) {
+    // localStorage.setItem('alreadyshownotif', 'true')
+    setTimeout(() => {
+      setState((prev) => ({
+        ...prev,
+        showNotif: true
+      }))
+    }, 5000)
+    // }
   }, [state?.isSplashShow])
 
   useEffect(() => {
