@@ -2,7 +2,7 @@ import Cursor from 'components/common/cursor'
 import WithCursorElement from 'components/common/with-cursor-element'
 import ClickToOpen from 'components/cursor-hover/click-to-open'
 import EnglishHover from 'components/cursor-hover/english'
-import FiqriArdiansyahHover from 'components/cursor-hover/fiqriardiansyah'
+import RanggaSaputraHover from 'components/cursor-hover/fiqriardiansyah'
 import IndonesiaHover from 'components/cursor-hover/indonesia'
 import Magnet from 'components/effect/magnet'
 import CursorProvider from 'context/cursor'
@@ -28,9 +28,9 @@ const TopNav = () => {
 
   const nameCursor = {
     in: {
-      key: FiqriArdiansyahHover.key,
-      type: FiqriArdiansyahHover.type,
-      element: <FiqriArdiansyahHover />
+      key: RanggaSaputraHover.key,
+      type: RanggaSaputraHover.type,
+      element: <RanggaSaputraHover />
     }
   }
 
@@ -79,7 +79,7 @@ const TopNav = () => {
           <WithCursorElement fallbackState={{ element: null }} state={{ element: nameCursor.in as any }}>
             <Link to="/">
               <Magnet>
-                <span className={linkClass}>FA - {new Date().getFullYear()} ©️</span>
+                <span className={linkClass}>RS - {new Date().getFullYear()} ©️</span>
               </Magnet>
             </Link>
           </WithCursorElement>

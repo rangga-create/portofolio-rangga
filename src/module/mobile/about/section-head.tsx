@@ -11,9 +11,9 @@ export const StackedImage = () => {
       transition={{ ease: easeDefault, duration: 1, delay: 2, opacity: { duration: 0.01 } }}
       className="relative flex items-center justify-center overflow-hidden"
     >
-      <motion.img src="/me.jpg" alt="fiqri ardiansyah" className="w-[80%] object-cover" />
-      <motion.img src="/me.jpg" alt="fiqri ardiansyah" className="absolute w-[70%] object-cover" />
-      <motion.img src="/me.jpg" alt="fiqri ardiansyah" className="absolute w-[60%] object-cover" />
+      <motion.img src="/foto-saya.jpg" alt="Nama Saya" className="w-[80%] object-cover" />
+      <motion.img src="/foto-saya.jpg" alt="Nama Saya" className="absolute w-[70%] object-cover" />
+      <motion.img src="/foto-saya.jpg" alt="Nama Saya" className="absolute w-[60%] object-cover" />
     </motion.div>
   )
 }
@@ -36,7 +36,7 @@ export default function SectionHeadMobile() {
           <StackedImage />
           <SpeedScrollElement speed={-500} className="pointer-events-none z-[90]">
             <StaggerSlideElementAbout className=" MENU-CHANGE-Y-200 pointer-events-none font-display text-5xl font-semibold leading-[1] text-white md:text-8xl">
-              FIQRI ARDIANSYAH
+              Rangga Saputra
             </StaggerSlideElementAbout>
           </SpeedScrollElement>
         </div>

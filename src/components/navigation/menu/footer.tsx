@@ -24,20 +24,20 @@ export default function MenuFooter() {
         className="mb-10 font-display text-3xl font-semibold leading-[1.2] md:mb-0 md:text-5xl lg:text-7xl"
         tag="h2"
       >
-        FIQRI ARDIANSYAH
+        Rangga Saputra
       </StaggerSlideElementMenu>
       <div className="mb-10 flex flex-col gap-2 md:hidden">
-        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah/" target="_blank" className="flex items-end gap-2">
+        <Link to="https://www.linkedin.com/in/ranggasaputra/" target="_blank" className="flex items-end gap-2">
           <GrLinkedin className="mt-1 text-xl text-primary" />
           <span className="font-poppins font-light underline">Linkedin</span>
         </Link>
-        <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-end gap-2">
+        <Link to="https://github.com/rangga-create" target="_blank" className="flex items-end gap-2">
           <GrGithub className="text-xl !text-primary" />
           <span className="font-poppins font-light underline">Github</span>
         </Link>
-        <Link to="mailto:fiqriardian92@gmail.com" className="flex items-end gap-2">
+        <Link to="mailto:ranggasaputraaaa453@gmail.com" className="flex items-end gap-2">
           <MdEmail className="text-xl !text-primary" />
-          <span className="font-poppins font-light underline">fiqriardian@gmail.com</span>
+          <span className="font-poppins font-light underline">ranggasaputraaaa453@gmail.com</span>
         </Link>
       </div>
       <StaggerSlideElementMenu
@@ -45,13 +45,13 @@ export default function MenuFooter() {
         className="hidden w-fit origin-bottom items-baseline gap-x-10 bg-primary px-3 pb-2 pt-3 md:flex"
         tag="div"
       >
-        <Link to="https://www.linkedin.com/in/fiqri-ardiansyah/" target="_blank" className="flex items-baseline">
+        <Link to="https://www.linkedin.com/in/rangga/" target="_blank" className="flex items-baseline">
           <GrLinkedin className="mt-1 text-xl text-white" />
         </Link>
-        <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-baseline">
+        <Link to="https://github.com/rangga-create" target="_blank" className="flex items-baseline">
           <GrGithub className="text-xl !text-white" />
         </Link>
-        <Link to="mailto:fiqriardian92@gmail.com" className="flex items-baseline">
+        <Link to="mailto:ranggasaputraaaa453@gmail.com" className="flex items-baseline">
           <MdEmail className="text-xl !text-white" />
         </Link>
       </StaggerSlideElementMenu>

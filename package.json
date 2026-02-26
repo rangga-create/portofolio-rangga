@@ -1,11 +1,11 @@
 {
-  "name": "fiqri-ardiansyah-portfolio",
+  "name": "rangga-saputra-portfolio",
   "description": "Portfolio web",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Fiqri Ardiansyah",
-    "email": "fiqriardi@gmail.com"
+    "name": "Rangga Saputra",
+    "email": "ranggasaputraaaa453@gmail.com"
   },
   "engines": {
     "node": "24.x"

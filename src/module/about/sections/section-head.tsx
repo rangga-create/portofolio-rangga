@@ -56,7 +56,7 @@ const Default = ({ asPreview }: PageProps) => {
           </div>
           <SpeedScrollElement speed={-500} className=" pointer-events-none z-[90]">
             <StaggerSlideElementAbout className=" MENU-CHANGE-Y-200 pointer-events-none font-display text-[10rem] font-semibold leading-[1] text-white">
-              FIQRI ARDIANSYAH
+              Rangga Saputra
             </StaggerSlideElementAbout>
           </SpeedScrollElement>
         </SpeedScrollElement>

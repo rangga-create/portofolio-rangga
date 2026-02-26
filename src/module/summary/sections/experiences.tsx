@@ -94,8 +94,8 @@ const Experiences = () => {
       <div className="CHILD-STAGGER" id="contact">
         <TitleSummaries text="Contact" observeId="contact" />
         <ul className="list-disc marker:text-white">
-          <Experience title="Email" sentences={['fiqriardian92@gmail.com']} link="mailto:fiqriardian92@gmail.com" />
-          <Experience title="Linkedin" sentences={['Fiqri Ardiansyah']} link="https://www.linkedin.com/in/fiqri-ardiansyah" className="mt-5" />
+          <Experience title="Email" sentences={['ranggasaputraaaa453@gmail.com']} link="mailto:ranggasaputraaaa453@gmail.com" />
+          <Experience title="Linkedin" sentences={['Rangga Saputra']} link="https://www.linkedin.com/in/rangga" className="mt-5" />
         </ul>
       </div>
     </div>

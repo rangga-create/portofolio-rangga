@@ -153,22 +153,22 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
             </div>
             <div className="flex flex-col items-start justify-between md:flex-row md:items-end">
               <div className="mb-10 flex flex-col gap-2 md:hidden">
-                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah" target="_blank" className="flex items-end gap-2">
+                <Link to="https://linkedin.com/in/saya" target="_blank" className="flex items-end gap-2">
                   <GrLinkedin className="mt-1 text-xl" style={{ color: colorMode !== 'light' ? light : dark }} />
                   <span style={{ color: colorMode !== 'light' ? light : dark }} className="font-poppins font-light underline">
                     Linkedin
                   </span>
                 </Link>
-                <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-end gap-2">
+                <Link to="https://github.com/saya" target="_blank" className="flex items-end gap-2">
                   <GrGithub className="text-xl " style={{ color: colorMode !== 'light' ? light : dark }} />
                   <span style={{ color: colorMode !== 'light' ? light : dark }} className="font-poppins font-light underline">
                     Github
                   </span>
                 </Link>
-                <Link to="mailto:fiqriardian92@gmail.com" className="flex items-end gap-2">
+                <Link to="mailto:saya@email.com" className="flex items-end gap-2">
                   <MdEmail className="text-xl " style={{ color: colorMode !== 'light' ? light : dark }} />
                   <span style={{ color: colorMode !== 'light' ? light : dark }} className="font-poppins font-light underline">
-                    fiqriardian@gmail.com
+                    Ranggasaputraaaa453@gmail.com
                   </span>
                 </Link>
               </div>
@@ -178,13 +178,13 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
                 className="hidden w-fit origin-bottom items-baseline gap-x-10 px-3 pb-2 pt-3 md:flex"
                 tag="div"
               >
-                <Link to="https://www.linkedin.com/in/fiqri-ardiansyah" target="_blank" className="flex items-baseline">
+                <Link to="https://linkedin.com/in/saya" target="_blank" className="flex items-baseline">
                   <GrLinkedin className="mt-1 text-xl" style={{ color: colorMode === 'light' ? light : dark }} />
                 </Link>
-                <Link to="https://github.com/fiqriardiansyah" target="_blank" className="flex items-baseline">
+                <Link to="https://github.com/saya" target="_blank" className="flex items-baseline">
                   <GrGithub className="text-xl " style={{ color: colorMode === 'light' ? light : dark }} />
                 </Link>
-                <Link to="mailto:fiqriardian92@gmail.com" className="flex items-baseline">
+                <Link to="mailto:saya@email.com" className="flex items-baseline">
                   <MdEmail className="text-xl " style={{ color: colorMode === 'light' ? light : dark }} />
                 </Link>
               </StaggerSlideElementMenu>
@@ -192,7 +192,7 @@ export default function Footer({ title, linkTitle, linkTo, colorMode }: FooterPr
                 ©️{new Date().getFullYear()}
               </span>
               <span className="font-poppins " style={{ color: colorMode !== 'light' ? light : dark }}>
-                Made with ❤️ by fiqri ardiansyah
+                Made with ❤️ by Rangga Saputra
               </span>
             </div>
           </div>

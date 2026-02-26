@@ -77,8 +77,8 @@ const paragraph = [
       style={{ marginLeft: '1rem', cursor: 'default', marginBottom: '2rem' }}
     />
   </div>,
-  <div className="flex items-center" key="fiqriardiansyah">
-    fiqri ardiansyah
+  <div className="flex items-center" key="ranggasaputra">
+    Rangga Saputra
     <Lottie
       options={{ ...defaultOptions, animationData: ArrowAnimation }}
       height={50}

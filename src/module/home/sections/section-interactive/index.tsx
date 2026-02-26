@@ -114,7 +114,7 @@ const Default = () => {
           </motion.div>
         </div>
         <motion.p style={{ y: scrollSpeedDesc }} className="CONTAINER MENU-CHANGE-Y-100  pointer-events-none mt-20 text-4xl text-gray-600">
-          Greetings, I&apos;m <span className="font-semibold text-primary">Fiqri Ardiansyah</span>, a seasoned{' '}
+          Greetings, I&apos;m <span className="font-semibold text-primary">Rangga Saputra</span>, a seasoned{' '}
           <span className="font-semibold text-primary">Fullstack Developer</span> with over 4 years of experience. I specialize in crafting web
           experiences that aren&apos;t just static pages but dynamic journeys. Explore my world of interactive web development.
         </motion.p>
