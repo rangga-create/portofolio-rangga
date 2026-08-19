@@ -13,8 +13,8 @@ const Experiences = () => {
         <ul className="list-disc marker:text-white">
           <Experience
             notAllowed
-            title="Informatics Engineering (Bachelor)"
-            sentences={['Universitas Mikroskil', 'Medan , Indonesia', '3.69/4.00']}
+            title="SMK MadinatulQuran Jonggol"
+            sentences={['Rekayasa Perangkat Lunak (RPL)', '2024 - 2027', 'Rata-rata Nilai: 90']}
             link="/"
           />
         </ul>
@@ -22,30 +22,33 @@ const Experiences = () => {
       <div className="CHILD-STAGGER" id="experiences">
         <TitleSummaries text="Experiences" observeId="experiences" />
         <ul className="list-disc marker:text-white">
-          <Experience title="INCIT" sentences={['Fullstack Developer', 'Dec 2024 - Present']} link="https://incit.org/" />
-          <Experience notAllowed title="Creloka" sentences={['Fullstack Developer', 'Mar 2022 - Nov 2024']} link="/" />
-          <Experience notAllowed title="Panggilin" sentences={['Frontend Developer', 'Jun 2021 - Mar 2022']} link="/" className="mt-5" />
+          <Experience notAllowed title="Aplikasi Absen Shalat MadinatulQuran" sentences={['Fullstack Developer', 'Dec 2024 - Present']} link="/" />
+          <Experience notAllowed title="BookVibe" sentences={['Fullstack Developer', 'Mar 2022 - Nov 2024']} link="/" className="mt-5" />
+          <Experience notAllowed title="Aplikasi Sosial Media" sentences={['Frontend Developer', 'Jun 2021 - Mar 2022']} link="/" className="mt-5" />
         </ul>
       </div>
       <div className="CHILD-STAGGER" id="selected-project">
         <TitleSummaries text="Selected Projects" observeId="selected-project" />
         <ul className="list-disc marker:text-white">
-          <Experience notAllowed title="JRG Bus" sentences={['Fullstack Developer', 'Okt 2022 - Apr 2023', 'Contract']} link="/" />
+          <Experience notAllowed title="Bropal" sentences={['Fullstack', 'Okt 2022 - Apr 2023', 'Contract']} link="/" />
           <Experience
             notAllowed
-            title="Monapro - Telkom Indonesia"
-            sentences={['Frontend Developer', 'Nov 2022 - Mar 2023', 'Contract']}
+            title="Sistem Koperasi Sekolah - Telkom"
+            sentences={['Frontend', 'Nov 2022 - Mar 2023', 'Contract']}
             link="/"
             className="mt-5"
           />
         </ul>
       </div>
       <div className="CHILD-STAGGER" id="selected-activities">
-        <TitleSummaries text="Selected Activities" observeId="selected-activities" />
+        <TitleSummaries text="Organization" observeId="selected-activities" />
         <ul className="list-disc marker:text-white">
-          <Experience notAllowed title="Dicoding Elite" sentences={['Code Reviewer', 'Okt 2023 - Present']} link="/" />
-          <Experience notAllowed title="BDD Event" sentences={['Facilitator', '2021/2023']} link="/" className="mt-5" />
-          <Experience notAllowed title="ID Camp" sentences={['Facilitator', '2021']} link="/" className="mt-5" />
+          <Experience notAllowed title="Ketua OSIS — SMK MadinatulQuran" sentences={['2024 - 2025']} link="/" />
+          <Experience notAllowed title="Forum OSIS Jawa Barat" sentences={['Peserta', '2024']} link="/" className="mt-5" />
+          <Experience notAllowed title="1M Youth Stop Bullying" sentences={['Relawan', '2024']} link="/" className="mt-5" />
+          <Experience notAllowed title="Class2Class International Discussion" sentences={['Delegasi', '2024']} link="/" className="mt-5" />
+          <Experience notAllowed title="Mini MUN" sentences={['Peserta', '2023']} link="/" className="mt-5" />
+          <Experience notAllowed title="Model United Nations (MUN)" sentences={['Delegasi', '2023']} link="/" className="mt-5" />
         </ul>
       </div>
       <div className="CHILD-STAGGER" id="selected-certificate">

@@ -6,7 +6,9 @@ export const easeDefault = [0.79, 0.14, 0.15, 0.86]
 export const routes = {
   index: '/',
   about: '/about',
-  summary: '/summary'
+  summary: '/summary',
+  playground: '/playground',
+  journey: '/journey'
 }
 
 export const SLIGHT_MOVE = 'slight-move'

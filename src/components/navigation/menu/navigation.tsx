@@ -5,6 +5,8 @@ import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion'
 import { easeDefault, randomNum, routes } from 'lib/utils'
 import About from 'pages/about'
 import Home from 'pages/home'
+import Journey from 'pages/journey'
+import Playground from 'pages/playground'
 import Summary from 'pages/summary'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
@@ -14,6 +16,8 @@ import { SiNextdotjs } from 'react-icons/si'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { BLUR_HOVER_LINK, CONTAINER_MENU } from '.'
 import StaggerSlideElementMenu from './stagger-slide-element-menu'
+
+const hoverLinkEffect = ['blur', 'opacity-80']
 
 function ArrowAnimation({ hover }: { hover?: boolean }) {
   return (
@@ -69,7 +73,6 @@ interface NavigationLinkProps {
 }
 
 function NavigationLink({ onClose, linkTo, text, preview }: NavigationLinkProps) {
-  const hoverLinkEffect = ['blur', 'opacity-80']
   const { state } = useContext(StateContext)
   const [active, setActive] = useState(false)
   const ref = useRef<HTMLAnchorElement | null>(null)
@@ -168,6 +171,16 @@ export default function MenuNavigation() {
       linkTo: routes.summary,
       text: 'SUMMARY',
       preview: <Summary asPreview />
+    },
+    {
+      linkTo: routes.playground,
+      text: 'PLAYGROUND',
+      preview: <Playground asPreview />
+    },
+    {
+      linkTo: routes.journey,
+      text: 'JOURNEY',
+      preview: <Journey asPreview />
     }
   ]
 

@@ -1,4 +1,6 @@
+import CinematicIntro from 'components/common/cinematic-intro'
 import Cursor from 'components/common/cursor'
+import EasterEgg from 'components/common/easter-egg'
 import Introduction from 'components/common/introduction'
 import UpCommingAlert from 'components/common/upcomming-alert'
 import Menu from 'components/navigation/menu'
@@ -9,14 +11,17 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { easeDefault, routes } from 'lib/utils'
 import { AboutTransition } from 'pages/about'
 import { HomeTransition } from 'pages/home'
+import { JourneyTransition } from 'pages/journey'
+import { PlaygroundTransition } from 'pages/playground'
 import { SummaryTransition } from 'pages/summary'
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 
 const Page = () => {
   const location = useLocation()
   const { state } = useContext(StateContext)
   const containerPageRef = useRef<any>()
+  const [cinematicShow, setCinematicShow] = useState(false)
 
   const removeStyleContainer = () => {
     setTimeout(() => {
@@ -35,6 +40,18 @@ const Page = () => {
   useEffect(() => {
     removeStyleContainer()
   }, [state?.isSplashShow, state?.menuShow, location.pathname])
+
+  useEffect(() => {
+    if (state?.isSplashShow === false) {
+      const t = setTimeout(() => {
+        if (!sessionStorage.getItem('cinematic-shown')) {
+          sessionStorage.setItem('cinematic-shown', '1')
+          setCinematicShow(true)
+        }
+      }, 800)
+      return () => clearTimeout(t)
+    }
+  }, [state?.isSplashShow])
 
   if (state?.isSmallDevice === undefined) {
     return <div className="h-screen w-screen bg-primary"></div>
@@ -56,16 +73,21 @@ const Page = () => {
         )}
       </AnimatePresence>
       {!state?.isSplashShow && (
-        <AnimatePresence mode="wait">
-          <React.Fragment key={location.pathname}>
-            <TopNav />
-            <Routes location={location} key={location.pathname}>
-              <Route index element={<HomeTransition />} />
-              <Route path={routes.about} element={<AboutTransition />} />
-              <Route path={routes.summary} element={<SummaryTransition />} />
-            </Routes>
-          </React.Fragment>
-        </AnimatePresence>
+        <>
+          {cinematicShow && <CinematicIntro onFinish={() => setCinematicShow(false)} />}
+          <AnimatePresence mode="wait">
+            <React.Fragment key={location.pathname}>
+              <TopNav />
+              <Routes location={location} key={location.pathname}>
+                <Route index element={<HomeTransition />} />
+                <Route path={routes.about} element={<AboutTransition />} />
+                <Route path={routes.summary} element={<SummaryTransition />} />
+                <Route path={routes.playground} element={<PlaygroundTransition />} />
+                <Route path={routes.journey} element={<JourneyTransition />} />
+              </Routes>
+            </React.Fragment>
+          </AnimatePresence>
+        </>
       )}
     </>
   )
@@ -79,6 +101,7 @@ const App = () => {
           <UpCommingAlert />
           <Cursor />
           <Menu />
+          <EasterEgg />
           <Page />
         </CursorProvider>
       </StateProvider>
